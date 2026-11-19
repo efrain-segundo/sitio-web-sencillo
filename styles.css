@@ -1,0 +1,146 @@
+/* Reseteo básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo con ondas abstractas y velo suave para mantener legibilidad */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgba(248, 250, 252, 0.25), rgba(238, 242, 255, 0.45)), 
+                      url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #1e1b4b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedor principal con efecto cristal claro */
+.contenedor-principal {
+    width: 100%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.84);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(30, 27, 75, 0.14);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+/* Header en índigo profundo extraído de las sombras de las ondas */
+.header {
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+    color: #ffffff;
+    padding: 22px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    border-bottom: 3px solid #818cf8;
+}
+
+.header img.logo {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 1.45rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.header small {
+    color: #c7d2fe;
+    font-size: 0.9rem;
+}
+
+/* Cuerpo principal */
+.contenido-body {
+    flex: 1;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido-body h2 {
+    font-size: 1.85rem;
+    color: #1e1b4b;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.contenido-body p {
+    font-size: 1.05rem;
+    color: #4338ca;
+    opacity: 0.85;
+    max-width: 580px;
+    line-height: 1.7;
+    margin-bottom: 34px;
+}
+
+/* Botón con degradado índigo-violeta haciendo juego con las ondas */
+.btn-streaming {
+    display: inline-block;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 15px 32px;
+    border-radius: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.32);
+}
+
+.btn-streaming:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(124, 58, 237, 0.42);
+    filter: brightness(1.06);
+}
+
+/* Footer translúcido en tono lavanda muy tenue */
+.footer {
+    background-color: rgba(238, 242, 255, 0.72);
+    border-top: 1px solid rgba(199, 210, 254, 0.65);
+    padding: 25px 30px;
+    text-align: center;
+    font-size: 0.92rem;
+    color: #3730a3;
+}
+
+.footer p {
+    margin: 6px 0;
+}
+
+.footer strong {
+    color: #1e1b4b;
+}
+
+.footer a {
+    color: #6d28d9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
